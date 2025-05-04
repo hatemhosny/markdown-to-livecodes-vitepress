@@ -7,7 +7,7 @@ export default defineConfig({
   description: "A VitePress Site",
   markdown: {
     config: (md) => {
-      md.use(markDownItLivecodes);
+      md.use(markDownItLivecodes, { appUrl: "https://dev.livecodes.io" });
     },
   },
   themeConfig: {
